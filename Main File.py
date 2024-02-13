@@ -122,4 +122,26 @@
 # ########################
 # print("Hello People")
 
+digit1 = int(input("Enter first number: "))
+digit2 = int(input("Enter second number: "))
+digit3 = int(input("Enter third number: "))
+operation = int(input("1 - Minimum, 2 - Maximum, 3 - Average"))
 
+if operation == 1:
+    if digit1 < digit2 < digit3:
+        print(f"Minimum: {digit1}")
+    elif digit2 < digit3 < digit1:
+        print(f"Minimum: {digit2}")
+    elif digit3 < digit2 < digit1:
+        print(f"Minimum: {digit3}")
+elif operation == 2:
+    if digit1 > digit2 > digit3:
+        print(f"Maximum: {digit1}")
+    elif digit2 > digit3 > digit1:
+        print(f"Maximum: {digit2}")
+    elif digit3 > digit2 >digit1:
+        print(f"Maximum: {digit3}")
+elif operation == 3:
+    print(f"Average: {digit1 +digit2 +digit3 / 3}")
+else:
+    print("Incorrect input")
