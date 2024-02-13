@@ -122,26 +122,39 @@
 # ########################
 # print("Hello People")
 
-digit1 = int(input("Enter first number: "))
-digit2 = int(input("Enter second number: "))
-digit3 = int(input("Enter third number: "))
-operation = int(input("1 - Minimum, 2 - Maximum, 3 - Average"))
+# digit1 = int(input("Enter first number: "))
+# digit2 = int(input("Enter second number: "))
+# digit3 = int(input("Enter third number: "))
+# operation = int(input("1 - Minimum, 2 - Maximum, 3 - Average"))
+#
+# if operation == 1:
+#     if digit1 < digit2 < digit3:
+#         print(f"Minimum: {digit1}")
+#     elif digit2 < digit3 < digit1:
+#         print(f"Minimum: {digit2}")
+#     elif digit3 < digit2 < digit1:
+#         print(f"Minimum: {digit3}")
+# elif operation == 2:
+#     if digit1 > digit2 > digit3:
+#         print(f"Maximum: {digit1}")
+#     elif digit2 > digit3 > digit1:
+#         print(f"Maximum: {digit2}")
+#     elif digit3 > digit2 >digit1:
+#         print(f"Maximum: {digit3}")
+# elif operation == 3:
+#     print(f"Average: {digit1 +digit2 +digit3 / 3}")
+# else:
+#     print("Incorrect input")
 
-if operation == 1:
-    if digit1 < digit2 < digit3:
-        print(f"Minimum: {digit1}")
-    elif digit2 < digit3 < digit1:
-        print(f"Minimum: {digit2}")
-    elif digit3 < digit2 < digit1:
-        print(f"Minimum: {digit3}")
-elif operation == 2:
-    if digit1 > digit2 > digit3:
-        print(f"Maximum: {digit1}")
-    elif digit2 > digit3 > digit1:
-        print(f"Maximum: {digit2}")
-    elif digit3 > digit2 >digit1:
-        print(f"Maximum: {digit3}")
-elif operation == 3:
-    print(f"Average: {digit1 +digit2 +digit3 / 3}")
-else:
-    print("Incorrect input")
+
+value1 = int(input("Enter first number: "))
+value2 = int(input("Enter second number: "))
+value3 = int(input("Enter third number: "))
+action = int(input("1 - Miles: , 2 - Inches: , 3 - Yards: "))
+
+if action == 1:
+    print(f"Miles: {value1 / 1609}")
+elif action == 2:
+    print(f"Inches: {value2 * 39}")
+elif action == 3:
+    print(f"Yards: {value3 * 1.09}")
