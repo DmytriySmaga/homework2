@@ -147,14 +147,19 @@
 #     print("Incorrect input")
 
 
-value1 = int(input("Enter first number: "))
-value2 = int(input("Enter second number: "))
-value3 = int(input("Enter third number: "))
-action = int(input("1 - Miles: , 2 - Inches: , 3 - Yards: "))
+# value1 = int(input("Enter first number: "))
+# value2 = int(input("Enter second number: "))
+# value3 = int(input("Enter third number: "))
+# action = int(input("1 - Miles: , 2 - Inches: , 3 - Yards: "))
+#
+# if action == 1:
+#     print(f"Miles: {value1 / 1609}")
+# elif action == 2:
+#     print(f"Inches: {value2 * 39}")
+# elif action == 3:
+#     print(f"Yards: {value3 * 1.09}")
 
-if action == 1:
-    print(f"Miles: {value1 / 1609}")
-elif action == 2:
-    print(f"Inches: {value2 * 39}")
-elif action == 3:
-    print(f"Yards: {value3 * 1.09}")
+
+print("Hello")
+print("How are you?")
+print("Text")
