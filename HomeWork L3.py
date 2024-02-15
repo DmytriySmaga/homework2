@@ -43,16 +43,38 @@
 #     print(f"Error {Error}")
 
 
+# try:
+#     digit1 = int(input("Enter the first number: "))
+#     digit2 = int(input("Enter the second number: "))
+#     if digit1 == digit2:
+#         digit1, digit2 = digit2, digit1
+#         print("Equal numbers")
+#     elif digit1 < digit2:
+#         print(f"{digit1, digit2}")
+#     elif digit1 > digit2:
+#         print(f"{digit2, digit1}")
+#
+# except ValueError as error:
+#     print("Please, enter an integer!")
+#     print(f"ValueError occurred: {error}")
+# except Exception as Error:
+#     print(f"Error {Error}")
+
 try:
-    digit1 = int(input("Enter the first number: "))
-    digit2 = int(input("Enter the second number: "))
-    if digit1 == digit2:
-        digit1, digit2 = digit2, digit1
-        print("Equal numbers")
-    elif digit1 < digit2:
-        print(f"{digit1, digit2}")
-    elif digit1 > digit2:
-        print(f"{digit2, digit1}")
+    number1 = int(input("Enter the first number: "))
+    number2 = int(input("Enter the second number: "))
+    user_select = int(input("Enter a sign for the operation: "))
+
+    if user_select == 1:
+        print(f"{number1 + number2}")
+    elif user_select == 2:
+        print(f"{number1 - number2}")
+    elif user_select == 3:
+        print(f"{number1 * number2}")
+    elif user_select == 4:
+        print(f"{number1 / number2}")
+    else:
+        print("Incorrect input")
 
 except ValueError as error:
     print("Please, enter an integer!")
