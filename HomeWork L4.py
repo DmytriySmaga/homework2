@@ -32,17 +32,38 @@
 #        print(f"Symbol {letter} appears {count} times in the sentence")
 
 
-user_text = input("Say hello to your friends and get it in Spanish: ")
-symbol = input("Enter a character to search for: ")
-print(user_text)
+# user_text = input("Say hello to your friends and get it in Spanish: ")
+# symbol = input("Enter a character to search for: ")
+# print(user_text)
+#
+# count = 0
+# for l in user_text:
+#     if l == symbol:
+#
+#         count += 1
+#
+#         print(f"Character {symbol} appears {count} times in the sentence")
+#
+# text = user_text.replace(f"{user_text}", "¡Hola amigos!", 1)
+# print(text)
 
-count = 0
-for l in user_text:
-    if l == symbol:
 
-        count += 1
+text = "What a beautiful morning"
+print(text[2:4:23])
 
-        print(f"Character {symbol} appears {count} times in the sentence")
+print(text[22:24])
 
-text = user_text.replace(f"{user_text}", "¡Hola amigos!", 1)
-print(text)
+print(text[:5])
+
+print(text[:22])
+
+print(text[1::2])
+
+print(text[::2])
+
+print(text[::-1])
+
+print(text[-1:0:-2])
+
+print(text[:])
+print(len(text))
