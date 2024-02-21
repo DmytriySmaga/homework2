@@ -158,7 +158,10 @@
 #     print(f"Inches: {value2 * 39}")
 # elif action == 3:
 #     print(f"Yards: {value3 * 1.09}")
+#
+# print("Goodbye")
+# print("Sayonara")
+# print("Text from master")
 
-print("Goodbye")
-print("Sayonara")
-print("Text from master")
+# Lesson 4 17.02.2024
+
