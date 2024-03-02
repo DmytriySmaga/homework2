@@ -69,3 +69,22 @@ def is_prime_number(num):
     return prime
 
 print(number_1(-3, 3, 5, 10, 15, 20, 25))
+
+
+
+
+
+
+def delete_number(list, number):
+
+   count = 0
+
+   for i in list:
+
+       if i == number:
+
+           list.remove(i)
+
+           count += 1
+
+   return count
