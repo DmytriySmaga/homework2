@@ -88,3 +88,18 @@ def delete_number(list, number):
            count += 1
 
    return count
+
+
+
+
+
+def two_lists(list1, list2):
+    combined = list1 + list2
+
+    return combined
+
+list1 = [2, 4, 6, 8, 10]
+list2 = [3, 5, 7, 9, 11]
+
+merged_lists = two_lists(list1, list2)
+print(merged_lists)
