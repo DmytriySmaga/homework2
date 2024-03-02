@@ -103,3 +103,20 @@ list2 = [3, 5, 7, 9, 11]
 
 merged_lists = two_lists(list1, list2)
 print(merged_lists)
+
+
+
+
+def powered_list(list, power):
+
+ result = []
+
+ for x in list:
+
+   result.append(x**power)
+
+ return result
+
+nums = [2, 4, 6, 10]
+powered_nums = powered_list(nums, 3)
+print(powered_nums)
