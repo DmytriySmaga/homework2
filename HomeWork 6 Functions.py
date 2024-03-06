@@ -22,3 +22,25 @@ try:
 except Exception as error:
     print(error)
 #
+
+
+
+def minimal(num1, num2, num3):
+    return min(num1), min(num2), min(num3)
+
+def minimal() -> None:
+    first_num = 22
+    second_num = 11
+    third_num = 44
+
+    if first_num < second_num < third_num:
+        print(first_num)
+    elif first_num > second_num < third_num:
+        print(second_num)
+    elif first_num > second_num > third_num:
+        print(third_num)
+
+try:
+    minimal()
+except Exception as error:
+    print(error)
