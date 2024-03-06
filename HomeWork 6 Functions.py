@@ -96,3 +96,17 @@ print(nums)
 result = delete_item(nums, 1)
 print(result)
 print(nums)
+
+
+
+
+def two_lists(list1, list2):
+    combined = list1 + list2
+
+    return combined
+
+list1 = [2, 4, 6, 8, 10]
+list2 = [3, 5, 7, 9, 11]
+
+merged_lists = two_lists(list1, list2)
+print(merged_lists)
