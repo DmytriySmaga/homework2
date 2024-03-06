@@ -77,3 +77,22 @@ my_numbers = [random.randint(1, 20) for _ in range(10)]
 print(my_numbers)
 result = get_prime_numbers(my_numbers)
 print(f"Prime numbers count: {result}")
+
+
+
+def delete_item(numbers: list[int], number: int) -> int:
+    deleted_item_counter = 0
+
+    for item in numbers:
+        if item == number:
+            numbers.remove(item)
+            deleted_item_counter += 1
+
+    return deleted_item_counter
+
+
+nums = [1, 3, 1, 5, 2, 6, 1, 3, 2, 5]
+print(nums)
+result = delete_item(nums, 1)
+print(result)
+print(nums)
