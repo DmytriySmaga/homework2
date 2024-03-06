@@ -31,3 +31,18 @@ def print_stars(n):
     print_stars(n-1)
 #
 print_stars(user_prints)
+
+
+
+
+user_writes1 = int(input("Please, enter first number: "))
+user_writes2 = int(input("Please, enter second number: "))
+def sum_range(a, b):
+
+    if a > b:
+
+        return 0
+
+    return a + sum_range(a+1, b)
+
+print(sum_range(user_writes1, user_writes2))
