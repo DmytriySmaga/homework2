@@ -49,3 +49,15 @@ if re.search(pattern, user) is not None:
 else:
     print("Error. Please, try again.")
 
+
+
+user_password = "Password: qWeRtY*123*"
+pattern = r"\w+.\W\s\w{6}\W\d{3}\W"
+
+if re.match(pattern, user_password) is not None:
+    print("Successful")
+    print(user_password)
+
+else:
+    print("Error. Please, try again.")
+
