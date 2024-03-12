@@ -24,3 +24,16 @@ if re.search(pattern, mobile_phone) is not None:
     print(mobile_phone)
 else:
     print("Error. Please, try again.")
+
+
+
+email = "Email Address: forthehomework@gmail.com"
+
+pattern = r"\w+.\w+\W\s\w{14}\W\w+\W\w+"
+
+if re.match(pattern, email) is not None:
+    print("Successful")
+    print(email)
+else:
+    print("Error. Please, try again.")
+
