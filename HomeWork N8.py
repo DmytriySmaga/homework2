@@ -37,3 +37,15 @@ if re.match(pattern, email) is not None:
 else:
     print("Error. Please, try again.")
 
+
+
+user = "User name: Peter James O'Conor"
+
+pattern = r"\w{4}\s\w{4}\W\s\w{5}\s\w{5}\s\w{1}\W\w{5}"
+
+if re.search(pattern, user) is not None:
+    print("Successful")
+    print(user)
+else:
+    print("Error. Please, try again.")
+
