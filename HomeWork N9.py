@@ -28,3 +28,29 @@ file_path = "File3.txt"
 words = count_words(file_path)
 if words != -1:
     print("The amount of words in the file:", words)
+
+
+
+Deadmau5 can talk shit about DJs all he wants because he's earned that right to, and You may not give a shit if your opinion is crap or not, but I assure you it is.
+
+def main():
+    text = input("Enter a text: ")
+
+    forbidden_words = ["shit"]
+
+    words = text.split()
+    replaced_text = ""
+    replacements = 0
+
+    for word in words:
+        if word.lower() in forbidden_words:
+            replaced_text += "*" * len(word) + " "
+            replacements += 1
+        else:
+            replaced_text += word + " "
+
+    print("Replaced text:", replaced_text)
+    print("The amohnt of replaced words:", replacements)
+
+if __name__ == "__main__":
+    main()
